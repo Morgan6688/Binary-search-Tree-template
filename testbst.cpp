@@ -1,7 +1,7 @@
 // testbst.cpp
 // Tests intbst.cpp for CS 24 lab
 
-#include "intbst.h"
+#include "bst.h"
 
 #include <iostream>
 using namespace std;
@@ -12,7 +12,7 @@ int getTest();
 // and does some simple tests of tree methods
 int main() {
 
-    IntBST bst1, bst2;
+  BST<int> bst1, bst2;
 
     // insert data to bst1
     bst1.insert(64);

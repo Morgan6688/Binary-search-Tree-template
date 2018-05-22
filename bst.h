@@ -1,18 +1,18 @@
 // intbst.h
 // Binary search tree header file for CS 24 lab
 
-#ifndef INTBST_H
-#define INTBST_H
+#ifndef BST_H
+#define BST_H
 
 #include <iostream>
 template <class item>
-using namespace std;
 
-class IntBST {
+class BST {
+  
  public:
     // ctor, dtor, insert and one print method already done in intbst.cpp:
-    IntBST();                   // constructor
-    ~IntBST();                  // destructor
+    BST();                   // constructor
+    ~BST();                  // destructor
     bool insert(item value);     // insert value; return false if duplicate
     void printPreOrder() const; // prints tree data pre-order to cout
 

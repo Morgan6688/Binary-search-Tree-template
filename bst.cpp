@@ -13,7 +13,7 @@ BST<item>::BST() : root(0) { }
 
 // destructor deletes all nodes
 template <class item>
-BST<item>::~IntBST() {
+BST<item>::~BST() {
     clear(root);
 }
 
@@ -157,7 +157,7 @@ int BST<item>::count(Node *n) const {
 // Whenever you call this method from somewhere else, pass it
 // the root node as "n"
 template <class item>
-typename BST<item>::Node* BST<item>::getNodeFor(item value, Node* n) const{
+typename BST<item>::Node* BST<item>::getNodeFor(item value,Node* n) const{
   if(!n)
     return NULL;
   if(n->info == value){
@@ -406,5 +406,4 @@ typename BST<item>::Node* BST<item>::min(Node* n) const{
   while(n->left)
     n = n->left;
   return n;
-
 }
